@@ -2,7 +2,7 @@
 
 > **"Efficiency for Interviews."**
 > 
-> A full-stack adaptive learning platform that teaches Data Structures & Algorithms (DSA) through **interactive, real-world project building**. Unlike standard chat wrappers, 2BOS employs a custom **"Professor Architecture"** to enforce Socratic learning—validating user logic before unlocking code rewards.
+> A full-stack adaptive learning platform that teaches Data Structures & Algorithms (DSA) through **interactive, real-world project building**. Unlike standard chat wrappers, 2BOS employs a custom **"Professor Architecture"** to enforce Socratic learning—validating user logic before unlocking code rewards. This project was built whilst keeping privacy and highly-personal learning progress of an individual in mind.
 
 ---
 
