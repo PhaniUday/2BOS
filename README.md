@@ -6,7 +6,7 @@
 
 ---
 
-## 📸 Interface Gallery
+## Interface Gallery
 
 ### **1. The Entry Protocol**
 Secure, JWT-based authentication system featuring a high-performance **"Acid-Graphite" UI**. The interface uses **Framer Motion** for liquid-smooth transitions and a distraction-free dark mode environment tailored for developers.
