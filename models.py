@@ -6,6 +6,7 @@ class User(Base):
     __tablename__ = "users"
     id = Column(Integer, primary_key=True, index=True)
     email = Column(String, unique=True, index=True)
+    hashed_password = Column(String) # <--- NEW: Stores the secure hash
     proficiency_level = Column(String)
 
 class Project(Base):
@@ -23,19 +24,16 @@ class ProjectStep(Base):
     id = Column(Integer, primary_key=True, index=True)
     project_id = Column(Integer, ForeignKey("projects.id"))
     
-    step_order = Column(Integer) # 1, 2, 3...
-    title = Column(String) # e.g. "Define the Node"
-    required_concept = Column(Text) # "Needs title, artist, next"
-    unlock_code = Column(Text) # "class Node: ..."
+    step_order = Column(Integer)
+    title = Column(String)
+    required_concept = Column(Text)
+    unlock_code = Column(Text)
 
     project = relationship("Project", back_populates="steps")
 
-# --- NEW TABLE: MEMORY ---
 class UserProgress(Base):
     __tablename__ = "user_progress"
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id")) # Ideally linked to real user
+    user_id = Column(Integer, ForeignKey("users.id"))
     project_id = Column(Integer, ForeignKey("projects.id"))
-    
-    # The step they are currently trying to solve
     current_step_order = Column(Integer, default=1)
