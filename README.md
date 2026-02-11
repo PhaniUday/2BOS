@@ -69,7 +69,6 @@ The core innovation of 2BOS. The AI acts as a **Keymaster**, validating user log
 ---
 
 **- Launch**
-Open `http://localhost:3000`.
 * **Test Account:** Create a new ID or use the seeded dev account.
 * **AI Requirement:** Ensure **Ollama** is running in the background with `qwen2.5-coder:3b` pulled.
 
